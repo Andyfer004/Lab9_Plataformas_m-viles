@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -50,6 +51,8 @@ android {
 }
 
 dependencies {
+    implementation("com.google.firebase:firebase-firestore-ktx:24.9.1")
+    implementation("com.google.firebase:firebase-common-ktx:20.4.2")
     val navVersion = "2.7.3"
     val accompanistVersion = "0.32.0"
     implementation("androidx.compose.ui:ui-android:1.5.2")
@@ -65,6 +68,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
 
     // RETROFIT
     implementation("com.google.code.gson:gson:2.9.0")

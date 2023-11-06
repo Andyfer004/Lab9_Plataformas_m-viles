@@ -1,7 +1,6 @@
 package com.zezzi.eventzezziapp.data.networking
 
 import com.zezzi.eventzezziapp.data.networking.response.DishCategoriesResponse
-import com.zezzi.eventzezziapp.data.networking.response.IngredientsCategoriesResponse
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
