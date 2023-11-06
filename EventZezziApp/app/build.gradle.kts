@@ -51,6 +51,8 @@ android {
 }
 
 dependencies {
+    implementation("com.google.firebase:firebase-firestore-ktx:24.9.1")
+    implementation("com.google.firebase:firebase-common-ktx:20.4.2")
     val navVersion = "2.7.3"
     val accompanistVersion = "0.32.0"
     implementation("androidx.compose.ui:ui-android:1.5.2")

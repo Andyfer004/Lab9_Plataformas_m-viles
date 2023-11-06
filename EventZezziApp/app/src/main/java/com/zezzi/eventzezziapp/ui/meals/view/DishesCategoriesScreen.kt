@@ -97,7 +97,7 @@ fun DishesCategoriesScreen(mealName: String,navController: NavController) {
                     items(rememberedDishes.value) { dish ->
                         Button(
                             onClick = {
-                                navController.navigate("IngredientsCategoriesScreen/${dish.description3}")
+
                                 // Aquí puedes poner la acción que se ejecutará cuando se haga clic en el botón.
                             },
                             modifier = Modifier

@@ -7,5 +7,4 @@ data class DishCategoriesResponse(@SerializedName("meals") val filter: List<Dish
 data class DishResponse(
     @SerializedName("strMeal") val name1: String,
     @SerializedName("strMealThumb") val imageUrl2: String,
-    @SerializedName("idMeal") val description3: String,
 )

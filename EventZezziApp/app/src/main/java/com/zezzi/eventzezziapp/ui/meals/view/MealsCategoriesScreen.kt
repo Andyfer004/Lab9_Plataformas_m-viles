@@ -21,7 +21,6 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.MutableState
@@ -37,7 +36,7 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import coil.compose.rememberImagePainter
-import com.zezzi.eventzezziapp.data.networking.response.MealResponse
+import com.zezzi.eventzezziapp.data.networking.response.CategoryResponse
 import com.zezzi.eventzezziapp.navigation.AppBar
 
 
@@ -47,8 +46,8 @@ fun MealsCategoriesScreen(
     viewModel: MealsCategoriesViewModel = viewModel()
     , navController: NavController
 ) {
-    val rememberedMeals: MutableState<List<MealResponse>> =
-        remember { mutableStateOf(emptyList<MealResponse>()) }
+    val rememberedMeals: MutableState<List<CategoryResponse>> =
+        remember { mutableStateOf(emptyList<CategoryResponse>()) }
     val isLoading: MutableState<Boolean> = remember { mutableStateOf(true) }
 
     LaunchedEffect(key1 = Unit) {
